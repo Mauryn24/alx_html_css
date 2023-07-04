@@ -17,4 +17,8 @@ The project involves basic structuring of an HTML file
             It could be reused on another website
         6. <footer>
             contains the copyrights, contact details and links to relevant pages
+
+
+    The prototype to be used is contained in <a href="https://www.figma.com/file/dyYL6Ku4WG7vsdpwvlcJZC/Homepage?type=design&node-id=3558%3A0&mode=design&t=JSOeALsGL7Mh9VJN-1">homepage</a>
+
 By the end of the project, one should be able to structure my webpage using the right semantics
