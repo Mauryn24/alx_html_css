@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+article {
+    flex: 2;
+}
+
+aside {
+    flex: 1;
+}
+
+article, aside {
+    overflow-y: auto;
+}
+
+.star::after{
+    content: "\2605";
+    color: yellow;
+    font-size: 24px;
+}
