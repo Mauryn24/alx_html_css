@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription</title>
+    <style>
+        .container {
+            max-width: 500px;
+            background-color: grey;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 0 auto;
+            margin-top: 150px;
+        }
+
+        input[type="text"]{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            width: 30%;
+            background-color: blue;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type='submit']:hover {
+            background-color: darkblue;
+        }
+            
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Subscription form</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <br>
+            <!--email-->
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email" required
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+            <br>
+            <!--radio for subscription-->
+            <label for="subscription">Subscription Preference:</label>
+            <input type="radio" id="subscription" name="subscription" value="monthly">
+            <label for="subscription">Monthly</label>
+            <input type="radio" id="subscription" name="subscription" value="yearly">
+            <label for="subscription">Yearly</label>
+            <br>
+            <!--subscribe button-->
+            <input type="submit" value="Subscribe">
+        </form>
+    </div>
+</body>
+</html>

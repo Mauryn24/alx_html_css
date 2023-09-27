@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox</title>
+    <style>
+        .container {
+            max-width: 500px;
+            background-color: grey;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 0 auto;
+            margin-top: 150px;
+        }
+
+        input[type="text"]{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            width: 30%;
+            background-color: blue;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type='submit']:hover {
+            background-color: darkblue;
+        }
+            
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Feedback Form </h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <br>
+            <!--email-->
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email" required
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+            <br>
+            <!--checkboxes-->
+            <label for="Feedback">Feedback options:</label>
+            <input type="checkbox" id="Feedback" name="Feedback" value="excellent">
+            <label for="Feedback">Excellent</label>
+            <input type="checkbox" id="Feedback" name="Feedback" value="good">
+            <label for="Feedback">Good</label>
+            <input type="checkbox" id="Feedback" name="Feedback" value="average">
+            <label for="Feedback">average</label>
+            <input type="checkbox" id="Feedback" name="Feedback" value="poor">
+            <label for="Feedback">poor</label>
+            <br>
+            <!--file upload-->
+            <label for="file">Upload your feedback:</label>
+            <input type="file" id="file" name="file">
+            <br>
+            <!--submit-->
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+</body>
+</html>
